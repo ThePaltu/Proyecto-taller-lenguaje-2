@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-05T17:01:50.139Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="JUdLP4zO_omohpjYQmbJ" version="20.2.8" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-05T17:03:13.951Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="Wio2eyGur0QosIXehSbB" version="20.2.8" type="github">
   <diagram id="utOYD9XdRsODfuq6jN40" name="Página-1">
     <mxGraphModel dx="2199" dy="529" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -121,7 +121,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="l0AhWcQJoaaa22Q7_LOx-55" value="Estadio" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="640" y="40" width="160" height="124" as="geometry" />
+          <mxGeometry x="620" y="36" width="160" height="124" as="geometry" />
         </mxCell>
         <mxCell id="l0AhWcQJoaaa22Q7_LOx-56" value="Nombre:String&#xa;Ciudad:String&#xa;Capacidad:int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="l0AhWcQJoaaa22Q7_LOx-55" vertex="1">
           <mxGeometry y="26" width="160" height="64" as="geometry" />
