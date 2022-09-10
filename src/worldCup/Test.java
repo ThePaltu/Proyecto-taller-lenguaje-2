@@ -1,4 +1,5 @@
-package mundial;
+package worldCup;
+
 
 import java.util.ArrayList;
 
@@ -31,8 +32,6 @@ public class Test {
 		grupoA.getPartidosGrupo().get(5).simularPartido(2, 0);
 		
 		grupoA.mostrarTablasGrupo();
-		
-		
 
 	}
 

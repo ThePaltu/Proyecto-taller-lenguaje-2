@@ -1,4 +1,4 @@
-package mundial;
+package worldCup;
 
 import java.util.Date;
 
@@ -31,18 +31,21 @@ public class Partido {
 		System.out.println("\t\t\t  " + this.getEquipoA().getPais() + "  " + this.getGolesEquipoA() + "  vs  " + this.getGolesEquipoB() + " " + this.getEquipoB().getPais());
 
 		
-		if (g1 > g2) {
+		if (g1 > g2) 
+		{
 			this.equipoA.sumaEstadisticas(1,1,0,0,g1,g2);
 			this.equipoB.sumaEstadisticas(1,0,0,1,g2,g1);
 		}
-		else if (g2 > g1) {
+		else if (g2 > g1) 
+		{
 			this.equipoA.sumaEstadisticas(1,0,0,1,g1,g2);
 			this.equipoB.sumaEstadisticas(1,1,0,0,g2,g1);
-			}
-			else {
-				this.equipoA.sumaEstadisticas(1,0,1,0,g1,g2);
-				this.equipoB.sumaEstadisticas(1,0,1,0,g1,g2);
-			}
+		}
+		else 
+		{
+			this.equipoA.sumaEstadisticas(1,0,1,0,g1,g2);
+			this.equipoB.sumaEstadisticas(1,0,1,0,g1,g2);
+		}
 				
 	}
 	

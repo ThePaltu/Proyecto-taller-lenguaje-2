@@ -1,7 +1,8 @@
-package mundial;
-
+package worldCup;
 
 import java.util.ArrayList;
+import java.util.Collections;
+
 
 public class Grupo {
 	
@@ -69,15 +70,20 @@ public class Grupo {
 		p6.setJugado(false);	
 	}
 	
-	// Busca los resultados de los partidos, calcula las estadisticas y las muestra en pantalla
+	// Genera una copia de la lista de equipos, la cual contiene las estadisticas, las ordena a traves del Sort en order decreciente y la muestra en pantalla
 	public void mostrarTablasGrupo() {
-	
+		
+		ArrayList<Equipo> copia = this.equipos;
+		Collections.sort(copia); 
+
 		System.out.println("-- GRUPO " + this.getIdGrupo() + " ------------------------------------------------------------------------------------------");
 		System.out.println("   Seleccion\t\t\t\tPJ\tPG\tPE\tPP\tGF\tGC\tDG\tPts\n-----------------------------------------------------------------------------------------------------");
+		
 		for (int i = 0 ; i < this.equipos.size() ; i++) {
-			System.out.println((i+1) + "  " + this.equipos.get(i).getPais() + "\t\t\t\t " + this.equipos.get(i).getEstadistica().getPj() + "\t " + this.equipos.get(i).getEstadistica().getPg() + "\t " + this.equipos.get(i).getEstadistica().getPe() + "\t " + this.equipos.get(i).getEstadistica().getPp() + "\t " + this.equipos.get(i).getEstadistica().getGf() + "\t " + this.equipos.get(i).getEstadistica().getGc() + "\t " + this.equipos.get(i).getEstadistica().getGd() + "\t " + this.equipos.get(i).getEstadistica().getPts());
+			System.out.println((i+1) + "  " + copia.get(i).getPais() + "\t\t\t\t " + copia.get(i).getEstadistica().getPj() + "\t " + copia.get(i).getEstadistica().getPg() + "\t " + copia.get(i).getEstadistica().getPe() + "\t " + copia.get(i).getEstadistica().getPp() + "\t " + copia.get(i).getEstadistica().getGf() + "\t " + copia.get(i).getEstadistica().getGc() + "\t " + copia.get(i).getEstadistica().getGd() + "\t " + copia.get(i).getEstadistica().getPts());
 		}
-			
+		
+		
 	}
 	
 	// Muestra los partidos de los 4 equipos, repartidos en las 3 jornadas, ordenado por fecha y horario, detallando el estadio

@@ -1,15 +1,15 @@
-package mundial;
+package worldCup;
 
 //import java.util.ArrayList;
 
-public class Equipo {
+public class Equipo implements Comparable<Equipo> {
 	
 	private String pais;
 	private EstadisticasEquipo estadistica;
 	//private ArrayList<Jugador> jugadores;
 	//private ArrayList<Auxiliar> auxiliares;
 	//private Auxiliar directorTecnico;
-	private int finalesPrevias;
+	private String participacionMundial;
 	private String confederacion;
 	
 	
@@ -26,10 +26,10 @@ public class Equipo {
 		this.estadistica.setGf(golesF);
 		this.estadistica.setGc(golesC);
 		this.estadistica.setGd();
-		if ( estadistica.getGf() == 1) {
+		if ( g == 1) {
 			this.estadistica.setPts(3);
 		}
-		else if( estadistica.getGd() == 1) {
+		else if( e == 1) {
 			this.estadistica.setPts(1);
 		}
 	}
@@ -40,11 +40,11 @@ public class Equipo {
 	public void setPais(String pais) {
 		this.pais = pais;
 	}
-	public int getFinalesPrevias() {
-		return finalesPrevias;
+	public String getparticipacionMundial() {
+		return participacionMundial;
 	}
-	public void setFinalesPrevias(int finalesPrevias) {
-		this.finalesPrevias = finalesPrevias;
+	public void setparticipacionMundial(String participacionMundial) {
+		this.participacionMundial = participacionMundial;
 	}
 	public String getConfederacion() {
 		return confederacion;
@@ -59,6 +59,29 @@ public class Equipo {
 
 	public void setEstadistica(EstadisticasEquipo estadistica) {
 		this.estadistica = estadistica;
+	}
+
+	@Override
+	public int compareTo(Equipo e) {
+		 Integer a = this.estadistica.getPts();
+		 Integer b = e.estadistica.getPts();
+		        
+		    if (b.compareTo(a) == 0) {
+		            
+		        Integer x = this.estadistica.getGd();
+		        Integer y = e.estadistica.getGd();
+		            
+		        if(y.compareTo(x) == 0) {
+		    
+		            Integer z = this.estadistica.getGf();
+		            Integer w = e.estadistica.getGf();
+		                
+		            return w.compareTo(z); 
+		        }else
+		            return y.compareTo(x);
+		    }
+
+		    return b.compareTo(a);
 	}
 
 }

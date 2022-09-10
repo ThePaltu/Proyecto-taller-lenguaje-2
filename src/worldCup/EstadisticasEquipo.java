@@ -1,4 +1,4 @@
-package mundial;
+package worldCup;
 
 public class EstadisticasEquipo {
 	
@@ -19,10 +19,10 @@ public class EstadisticasEquipo {
 		gf += golesF;
 		gc += golesC;
 		gd += (golesF - golesC);
-		if ( this.getPg() == 1) {
+		if ( g == 1) {
 			pts+=3;
 		}
-		else if( this.getPe() == 1) {
+		else if( e == 1) {
 			pts++;
 		}
 	}
@@ -31,7 +31,7 @@ public class EstadisticasEquipo {
 		return pj;
 	}
 	public void setPj(int pj) {
-		this.pj += pj;
+		this.pj++;
 	}
 	public int getPg() {
 		return pg;
