@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-09-13T21:26:51.502Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="4WBiNGXx9wrFT4aDRRV8" version="20.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-13T21:35:41.396Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="2myyN9lSPgNWnYCwp5vT" version="20.3.0" type="github">
   <diagram id="utOYD9XdRsODfuq6jN40" name="Página-1">
-    <mxGraphModel dx="2373" dy="529" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2849" dy="692" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -116,16 +116,16 @@
           <mxGeometry y="98" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="2w_d76JHev1-_jhICikv-1" value="FifaWorldCup" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="1100" y="470" width="330" height="180" as="geometry" />
+          <mxGeometry x="1130" y="450" width="330" height="240" as="geometry" />
         </mxCell>
-        <mxCell id="2w_d76JHev1-_jhICikv-2" value="- faseGrupo: ArrayList &lt;FaseGroup&gt;&#xa;- jornadas: ArrayList &lt;Jornada&gt;&#xa;- estadisticasGrupo: HashMap &lt;Equipo,EstadisticaEquipo&gt;&#xa;- jornadaActual: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="2w_d76JHev1-_jhICikv-1" vertex="1">
+        <mxCell id="2w_d76JHev1-_jhICikv-2" value="- faseGrupo: ArrayList &lt;Grupo&gt;&#xa;- playOff: PlayOff&#xa;- sedes: ArrayList&lt;Estadio&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="2w_d76JHev1-_jhICikv-1" vertex="1">
           <mxGeometry y="26" width="330" height="74" as="geometry" />
         </mxCell>
         <mxCell id="2w_d76JHev1-_jhICikv-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="2w_d76JHev1-_jhICikv-1" vertex="1">
           <mxGeometry y="100" width="330" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="2w_d76JHev1-_jhICikv-4" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="2w_d76JHev1-_jhICikv-1" vertex="1">
-          <mxGeometry y="108" width="330" height="72" as="geometry" />
+        <mxCell id="2w_d76JHev1-_jhICikv-4" value="+ FifaWorldCup ()&#xa;- cargaSedes (): ArrayList&lt;Estadio&gt;&#xa;+ getFaseGrupo (): ArrayList&lt;Grupo&gt;&#xa;+ setFaseGrupo (ArrayList&lt;Grupo&gt;): void&#xa;+ getPlayOff (): playOff&#xa;+ setPlayOff (playOff): void&#xa;+ getSedes (): ArrayList&lt;Estadio&gt;&#xa;+ setSedes (ArrayList&lt;Estadio&gt;): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="2w_d76JHev1-_jhICikv-1" vertex="1">
+          <mxGeometry y="108" width="330" height="132" as="geometry" />
         </mxCell>
         <mxCell id="2w_d76JHev1-_jhICikv-5" value="Grupo" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
           <mxGeometry x="995" y="790" width="265" height="250" as="geometry" />
@@ -263,6 +263,18 @@
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="615" y="850" as="sourcePoint" />
             <mxPoint x="490" y="1150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WlYOGq85mmoRjWlNMjg_-12" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.19;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="1" source="2w_d76JHev1-_jhICikv-4" target="2w_d76JHev1-_jhICikv-5">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1260" y="717.5" as="sourcePoint" />
+            <mxPoint x="1142.5" y="756.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WlYOGq85mmoRjWlNMjg_-13" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.19;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1360.0000000000002" y="690.0000000000001" as="sourcePoint" />
+            <mxPoint x="1361.05" y="790" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
