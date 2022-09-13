@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-13T22:07:55.478Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="vTNEXQRtd00uxgD394tQ" version="20.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-13T22:20:08.548Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="p372qCGRJimUkMfGaPR5" version="20.3.0" type="github">
   <diagram id="utOYD9XdRsODfuq6jN40" name="Página-1">
     <mxGraphModel dx="2249" dy="1963" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -45,7 +45,7 @@
         <mxCell id="l0AhWcQJoaaa22Q7_LOx-23" value="Auxiliar" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
           <mxGeometry x="240" y="670" width="160" height="114" as="geometry" />
         </mxCell>
-        <mxCell id="l0AhWcQJoaaa22Q7_LOx-24" value="Tipo:String/int&#xa;Nacionalidad:String/int&#xa;???&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="l0AhWcQJoaaa22Q7_LOx-23" vertex="1">
+        <mxCell id="l0AhWcQJoaaa22Q7_LOx-24" value="Tipo:String/int&#xa;???&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="l0AhWcQJoaaa22Q7_LOx-23" vertex="1">
           <mxGeometry y="26" width="160" height="54" as="geometry" />
         </mxCell>
         <mxCell id="l0AhWcQJoaaa22Q7_LOx-25" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="l0AhWcQJoaaa22Q7_LOx-23" vertex="1">
@@ -286,7 +286,7 @@
           <mxGeometry y="60" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="6dctcR_bx_eZ5hq1fq1C-11" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;exitX=-0.025;exitY=0.36;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="l0AhWcQJoaaa22Q7_LOx-18" target="6dctcR_bx_eZ5hq1fq1C-10">
-          <mxGeometry x="-0.3895" y="3" relative="1" as="geometry">
+          <mxGeometry x="-0.3765" y="-10" relative="1" as="geometry">
             <mxPoint x="-220" y="640" as="sourcePoint" />
             <mxPoint x="-220" y="720" as="targetPoint" />
             <Array as="points">
@@ -296,9 +296,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="6dctcR_bx_eZ5hq1fq1C-12" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.388;entryY=1.038;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="6dctcR_bx_eZ5hq1fq1C-1" target="6dctcR_bx_eZ5hq1fq1C-10">
-          <mxGeometry x="-1" y="3" relative="1" as="geometry">
+          <mxGeometry x="-0.8424" relative="1" as="geometry">
             <mxPoint x="280" y="220" as="sourcePoint" />
             <mxPoint x="580" y="-30" as="targetPoint" />
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="6dctcR_bx_eZ5hq1fq1C-13" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.154;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="2w_d76JHev1-_jhICikv-1" target="6dctcR_bx_eZ5hq1fq1C-8">
