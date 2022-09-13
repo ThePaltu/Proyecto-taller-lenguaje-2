@@ -16,6 +16,8 @@ public class Equipo implements Comparable<Equipo> {
 	public Equipo(String nombre) {
 		this.setPais(nombre);
 		estadistica = new EstadisticasEquipo(0,0,0,0,0,0);
+		/*this.setparticipacionMundial(participacion);
+		this.setConfederacion(confe);*/
 	}
 	
 	public void sumaEstadisticas(int j, int g, int e, int p, int golesF, int golesC) {

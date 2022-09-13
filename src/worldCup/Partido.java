@@ -1,11 +1,11 @@
 package worldCup;
 
-import java.util.Date;
+import java.util.Calendar;
 
 public class Partido {
 	
-	private Date fecha;
-	//private Estadio estadio;
+	private Calendar fecha;
+	private Estadio estadio;
 	private Equipo equipoA;
 	private Equipo equipoB;
 	private int golesEquipoA;
@@ -21,6 +21,11 @@ public class Partido {
 		
 		setEquipoA(equipo1);
 		setEquipoB(equipo2);
+	}
+	
+	public Partido (Calendar fechaDesignada, Estadio estadioDesignado) {
+		this.setEstadio(estadioDesignado);
+		this.fecha = fechaDesignada;
 	}
 	
 	public void simularPartido (int g1, int g2) {
@@ -49,10 +54,10 @@ public class Partido {
 				
 	}
 	
-	public Date getFecha() {
+	public Calendar getFecha() {
 		return fecha;
 	}
-	public void setFecha(Date fecha) {
+	public void setFecha(Calendar fecha) {
 		this.fecha = fecha;
 	}
 	public int getGolesEquipoA() {
@@ -94,6 +99,14 @@ public class Partido {
 
 	public void setEquipoB(Equipo equipo2) {
 		this.equipoB = equipo2;
+	}
+
+	public Estadio getEstadio() {
+		return estadio;
+	}
+
+	public void setEstadio(Estadio estadio) {
+		this.estadio = estadio;
 	}
 	
 	
